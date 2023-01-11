@@ -41,3 +41,37 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
+button{
+    background-color: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 00;
+    outline: none;
+    cursor: pointer;
+}
+button span{
+    display: block;
+    background-color: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+}
+.lamp-container{
+    position: absolute;
+    left: 22%;
+    top: -20px;
+    width: 200px;
+}
+.lamp{
+    width: 100%;
+}
+.light{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+}
