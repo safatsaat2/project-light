@@ -22,19 +22,36 @@
                 <li><a href="">Contemporary</a></li>
                 <li><a href="">Affordable</a></li>
             </ul>
-            <button type="button"><span></span></button>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
         </nav>
 <!-- Nav Closed -->
         <div class="lamp-container">
             <img src="images/lamp.png" alt="" class="lamp">
-            <img src="images/light.png" alt="" class="light">
+            <img src="images/light.png" alt="" class="light" id="light">
         </div>
     <!-- Lamp Closed -->
         <div class="text-container">
             <h1>Latest <br> in Lighting</h1>
             <p>Light is electromagnetic radiation that can be detected by the human eye. Electromagnetic radiation occurs over an extremely wide range of wavelengths, from gamma rays with wavelengths less than about 1 × 10−11 metres to radio waves measured in metres.</p>
             <a href="">Check All Collections</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
         </div>
     </div>
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function toggleBtn(){
+        btn.classList.toggle("active")
+        light.classList.toggle("on")
+    }
+
+</script>
+
 </body>
 </html>

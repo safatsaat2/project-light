@@ -49,6 +49,7 @@ button{
     border: 00;
     outline: none;
     cursor: pointer;
+    transition: background-color 1s;
 }
 button span{
     display: block;
@@ -57,6 +58,7 @@ button span{
     width: 26px;
     border-radius: 50%;
     margin-left: 2px;
+    transition: background-color 1s, margin-left .5s;
 }
 .lamp-container{
     position: absolute;
@@ -76,9 +78,59 @@ button span{
     width: 700px;
     margin-left: -10px;
     height: 260px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 .text-container{
     max-width: 600px;
-    margin-top: 7%;
+    margin-top: 2%;
     margin-left: 50%;
+}
+.text-container h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.text-container a{
+    text-decoration: none;
+    background-color: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background-color: #00986f;
+    display: block;
+}
+
+.active{
+    background-color: green;
+}
+
+.active span{
+    background-color: whitesmoke;
+    margin-left: 31px;
+}
+
+.on{
+    opacity: 1;
 }
